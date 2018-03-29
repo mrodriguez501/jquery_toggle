@@ -16,7 +16,13 @@ git remote add origin [URL From Step 1]
 to push up your master branch (change master to something else for a different branch):
 git push origin master*/
 
+/*TABLE OF CONTENTS
+line	content
+26 --- Toggle function
+35 --- Match Height function
 
+
+*/
 //toggle function same class
 $(document).ready(function () {
     $('.to-hide-element').hide();
