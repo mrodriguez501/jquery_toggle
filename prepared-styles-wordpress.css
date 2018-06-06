@@ -7,3 +7,25 @@
 @media (min-width: 769px) {
   .iron-mobile-only {
     display: none; } }
+
+/*Adding lines before and after text*/
+/*add more media queries for responsive design ex. https://www.prifender.com/support/#support-cta*/
+@media screen and (min-width: 500px) {
+	#support-cta .cta-title:before, #support-cta .cta-title:after {
+		background-color: #fff;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+	}
+	#support-cta .cta-title:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	#support-cta .cta-title:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+}
