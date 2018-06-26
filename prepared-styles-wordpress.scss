@@ -11,3 +11,63 @@
 		display: none;
 	}
 }
+
+/*update the mennu mobile breakpoint for bridge*/
+$min-breakpoint: 1000px; /*default for bridge*/
+$max-breakpoint: 1200px; /*change to your desired breakpoint*/
+$logo-height: 100px; /*logo height wrapper -> default on bridge is 100px*/
+
+@media only screen and (min-width: $min-breakpoint) and (max-width: $max-breakpoint) {
+	.header_bottom nav.mobile_menu {
+		display: block !important;
+	}
+	.mobile_menu_button, .logo_wrapper {
+    	display: table ;
+		height:  $logo-height !important;
+		left: 50%;
+	}
+	.logo_wrapper {
+		height: $logo-height !important;
+		left: 50% !important;
+	}
+	.fixed_top_header .q_logo img.mobile, .logo_wrapper {
+		position: absolute;
+	}
+	.header_bottom nav.main_menu {
+		display: none!important;
+	}
+	.q_logo {
+		display: table-cell;
+		position: relative;
+		top: auto;
+		vertical-align: middle;
+	}
+	.q_logo a {
+		left: -50%;
+		width: auto!important;
+	}
+	.q_logo img {
+		top: 0;
+    	left: 0;
+	}
+	header .q_logo img.normal {
+		display: none!important;
+	}
+	header.scrolled .q_logo a {
+		height: 90px !important;
+	}
+	header.scrolled .side_menu_button {
+		height: $logo-height !important;
+	}
+	header .q_logo img.mobile {
+		display: block!important;
+		opacity: 1!important;
+		position: relative;
+		margin: 0 auto;
+	}
+	.header_inner_left {
+		position: relative!important;
+		left: 0!important;
+		margin-bottom: 0;
+	}
+}
